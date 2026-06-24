@@ -67,3 +67,85 @@ h2{
 .button:hover{
     background-color:#A71B20;
 }
+
+/* ==========================
+   MENU PAGE
+========================== */
+
+.menu-page {
+    background: #101010;
+    color: #efe8d7;
+    font-family: Arial, sans-serif;
+}
+
+.menu-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.menu-logo {
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+.menu-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.menu-tagline {
+    color: #c8bca3;
+}
+
+.back-button {
+    color: #efe8d7;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.menu-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.menu-card {
+    background: #181818;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.menu-image img {
+    width: 100%;
+    display: block;
+}
+
+.menu-info {
+    padding: 25px;
+}
+
+.menu-info h2 {
+    margin-bottom: 15px;
+}
+
+.menu-info p {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.price {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #efe8d7;
+}
+
+.menu-footer {
+    text-align: center;
+    padding: 40px;
+    color: #c8bca3;
+}
+
