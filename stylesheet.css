@@ -149,3 +149,63 @@ h2{
     color: #c8bca3;
 }
 
+
+/* ==========================
+   STICKY MENU BUTTONS
+========================== */
+
+.sticky-menu-actions {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    background: rgba(16, 16, 16, 0.96);
+    border-top: 1px solid #8f161b;
+    z-index: 1000;
+}
+
+.sticky-action-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 54px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #8f161b;
+    color: #efe4c6;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+.sticky-action-button:hover {
+    background-color: #a71b20;
+}
+
+.sticky-action-button:active {
+    transform: scale(0.97);
+}
+
+.call-button {
+    background-color: #8f161b;
+}
+
+/* Prevent the sticky buttons from covering the bottom content */
+.menu-page {
+    padding-bottom: 95px;
+}
+
+.menu-footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #c8bca3;
+}
