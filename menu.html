@@ -2,21 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Mise En Place Menu</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
-    <!-- Your existing stylesheet -->
+    <!-- Existing stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body class="menu-page">
+
+    <!-- ==========================
+         MENU HEADER
+    =========================== -->
 
     <header class="menu-header">
 
-        <img src="images/MIPLogo1.png" alt="Mise En Place Logo" class="menu-logo">
+        <img
+            src="images/MIPLogo1.png"
+            alt="Mise En Place Logo"
+            class="menu-logo"
+        >
 
         <h1>Menu</h1>
 
@@ -27,317 +43,659 @@
     </header>
 
 
-    <section class="menu-container">
+    <main>
 
-        <!-- Cuban Torta -->
-        <div class="menu-card">
+        <!-- ==========================
+             FEATURED FAVORITES
+        =========================== -->
 
-            <div class="menu-image">
-                <img src="images/cubana.png" alt="Torta Cubana">
-            </div>
+        <section class="featured-section">
 
-            <div class="menu-info">
+            <p class="section-eyebrow">
+                Not Sure What to Order?
+            </p>
 
-                <h2>Torta Cubana</h2>
+            <h2 class="section-title">
+                Featured Favorites
+            </h2>
 
-                <p>
-                    Our ultimate Mexican torta stacked with breaded steak, ham, turkey, hot dog, 
-                    Mexican sausage, chorizo, egg, quesillo, queso fresco, and refried beans. 
-                    Topped with fresh tomato, onion, avocado, mayonnaise, and your choice of pickled jalapeños 
-                    or chipotle peppers in adobo sauce
-                </p>
+            <div class="featured-links">
 
-                <span class="price">$22</span>
+                <a
+                    href="#torta-cubana"
+                    class="featured-link"
+                >
+                    <span class="featured-item-details">
+                        <strong>Torta Cubana</strong>
+                        <small>Juan's Favorite</small>
+                    </span>
 
-            </div>
-        </div>
+                    <span class="featured-price">
+                        $24
+                    </span>
+                </a>
 
-        <!-- Hawaiian Torta -->
-        <div class="menu-card">
 
-            <div class="menu-image">
-                <img src="images/hawaiian-torta.png" alt="Hawaiian Torta">
-            </div>
+                <a
+                    href="#brisket-burger"
+                    class="featured-link"
+                >
+                    <span class="featured-item-details">
+                        <strong>Brisket Burger</strong>
+                        <small>House Favorite</small>
+                    </span>
 
-            <div class="menu-info">
+                    <span class="featured-price">
+                        $17
+                    </span>
+                </a>
 
-                <h2>Hawaiian Torta</h2>
 
-                <p>
-                    A toasted Mexican torta stacked with breaded steak, ham, 
-                    melted quesillo, and sweet pineapple. 
-                    Topped with fresh tomato, avocado, mayonnaise, 
-                    and your choice of pickled jalapeños or chipotle peppers in adobo sauce.
-                </p>
+                <a
+                    href="#quesabirria"
+                    class="featured-link"
+                >
+                    <span class="featured-item-details">
+                        <strong>Quesabirria</strong>
+                        <small>Must Try</small>
+                    </span>
 
-                <span class="price">$20</span>
-
-            </div>
-        </div>
-
-        <!-- Brisket Burger -->
-        <div class="menu-card">
-
-            <div class="menu-image">
-                <img src="images/brisketburger.png" alt="Brisket Burger">
-            </div>
-
-            <div class="menu-info">
-
-                <h2>Brisket Burger</h2>
-
-                <p>
-                    1/3-pound burger plus 5 oz brisket
-                    with BBQ sauce, lettuce,
-                    tomato, onions, pickles and a side of fries
-                </p>
-
-                <span class="price">$15</span>
+                    <span class="featured-price">
+                        $16
+                    </span>
+                </a>
 
             </div>
-        </div>
 
-        <!-- Hawaiian Burger -->
-        <div class="menu-card">
+        </section>
 
-            <div class="menu-image">
-                <!-- Replace image later -->
-                <img src="images/hawaiianBurger.png" alt="Hawaiian Burger">
-            </div>
 
-            <div class="menu-info">
+        <section class="menu-container">
 
-                <h2>Hawaiian Burger</h2>
+            <!-- ==========================
+                 TORTAS
+            =========================== -->
 
-                <p>
-                    1/3-pound burger topped with ham, pineapple,
-                    pepper jack cheese, lettuce, tomato,
-                    onion, pickles and a side of fries
-                </p>
+            <div class="menu-category-header">
 
-                <span class="price">$14</span>
+                <p>Big, Bold &amp; Fully Loaded</p>
+
+                <h2>Tortas</h2>
 
             </div>
-        </div>
 
-        <!-- Quesabirria -->
-        <div class="menu-card">
 
-            <div class="menu-image">
-                <img src="images/quesabirria.png" alt="Quesabirria">
-            </div>
+            <!-- Torta Cubana -->
 
-            <div class="menu-info">
+            <article
+                class="menu-card featured-menu-card"
+                id="torta-cubana"
+            >
 
-                <h2>Quesabirria</h2>
+                <div class="menu-image">
 
-                <p>
-                    Corn tortillas with mozzarella cheese,
-                    birria meat, onion, and cilantro.
-                    Served with birria broth.
-                </p>
+                    <img
+                        src="images/cubana.png"
+                        alt="Torta Cubana"
+                        loading="lazy"
+                    >
 
-                <span class="price">$14</span>
+                </div>
 
-            </div>
-        </div>
+                <div class="menu-info">
 
-        <!-- Birriamen -->
-        <div class="menu-card">
+                    <h2>
+                        Torta Cubana
 
-            <div class="menu-image">
-                <img src="images/birriaRamen.png" alt="Birriamen">
-            </div>
+                        <span class="menu-badge">
+                            Juan's Favorite
+                        </span>
+                    </h2>
 
-            <div class="menu-info">
+                    <p>
+                        Our ultimate Mexican torta stacked with breaded
+                        steak, ham, turkey, hot dog, Mexican sausage,
+                        chorizo, egg, quesillo, queso fresco, and refried
+                        beans. Topped with fresh tomato, onion, avocado,
+                        mayonnaise, and your choice of pickled jalapeños
+                        or chipotle peppers in adobo sauce.
+                    </p>
 
-                <h2>Birriamen</h2>
+                    <span class="price">
+                        $24
+                    </span>
 
-                <p>
-                    Homemade birria with ramen noodles,
-                    dressed with onion and cilantro.
-                </p>
+                </div>
 
-                <span class="price">$15</span>
+            </article>
 
-            </div>
-        </div>
 
-         <!-- Steak Tacos -->
-        <div class="menu-card">
+            <!-- Hawaiian Torta -->
 
-            <div class="menu-image">
-                <img src="images/tacos.png" alt="Quesabirria">
-            </div>
+            <article class="menu-card">
 
-            <div class="menu-info">
+                <div class="menu-image">
 
-                <h2>Street Steak Tacos</h2>
+                    <img
+                        src="images/hawaiian-torta.png"
+                        alt="Hawaiian Torta"
+                        loading="lazy"
+                    >
 
-                <p>
-                    Four authentic street tacos made with seasoned chopped steak on warm corn tortillas, 
-                    finished with fresh onions and cilantro. 
-                    Served with lime wedges and homemade salsa.
-                </p>
+                </div>
 
-                <span class="price">$14</span>
+                <div class="menu-info">
 
-            </div>
-        </div>
-        
-        <!-- jalapeño chicken ranch wrap -->
-        <div class="menu-card">
+                    <h2>Hawaiian Torta</h2>
 
-            <div class="menu-image">
-                <img src="images/ranchwrap.png" alt="Jalapeño Chicken Ranch Wrap">
-            </div>
+                    <p>
+                        A toasted Mexican torta stacked with breaded
+                        steak, ham, melted quesillo, and sweet pineapple.
+                        Topped with fresh tomato, avocado, mayonnaise,
+                        and your choice of pickled jalapeños or chipotle
+                        peppers in adobo sauce.
+                    </p>
 
-            <div class="menu-info">
+                    <span class="price">
+                        $22
+                    </span>
 
-                <h2>Jalapeño Chicken Ranch Wrap</h2>
+                </div>
 
-                <p>
-                    Crispy chicken wrapped in a warm flour tortilla with 
-                    crispy bacon, mozzarella cheese, pickled jalapeños, crisp 
-                    lettuce, fresh pico de gallo, and creamy ranch dressing.
-                </p>
+            </article>
 
-                <span class="price">$15</span>
 
-            </div>
-        </div>
-        
-        
-        <!-- chicken caesar wrap -->
-        <div class="menu-card">
+            <!-- Chicken Milanesa Torta -->
 
-            <div class="menu-image">
-                <img src="images/caesarwrap.png" alt="Chicken caesar Wrap">
-            </div>
+            <article class="menu-card">
 
-            <div class="menu-info">
+                <div class="menu-image">
 
-                <h2>Chicken Caesar Wrap</h2>
+                    <img
+                        src="images/chickenTorta.png"
+                        alt="Chicken Milanesa Torta"
+                        loading="lazy"
+                    >
 
-                <p>
-                    Crispy chicken wrapped in a warm flour tortilla 
-                    with crisp lettuce, 
-                    fresh tomatoes, melted cheese, 
-                    and creamy Caesar dressing.
-                </p>
+                </div>
 
-                <span class="price">$15</span>
+                <div class="menu-info">
 
-            </div>
-        </div>
+                    <h2>Chicken Milanesa Torta</h2>
 
-        <!-- Chicken Torta -->
-        <div class="menu-card">
+                    <p>
+                        Crispy breaded chicken breast topped with melted
+                        cheese, refried beans, fresh tomatoes, onion, and
+                        pickled jalapeños on a toasted Mexican bolillo
+                        roll.
+                    </p>
 
-            <div class="menu-image">
-                <img src="images/chickenTorta.png" alt="Chicken Torta">
-            </div>
+                    <span class="price">
+                        $22
+                    </span>
 
-            <div class="menu-info">
+                </div>
 
-                <h2>Chicken Milanesa Torta</h2>
+            </article>
 
-                <p>
-                    Crispy breaded chicken breast topped with melted cheese, 
-                    refried beans, fresh tomatoes, onion, and pickled jalapeños on a toasted Mexican bolillo roll.
-                </p>
 
-                <span class="price">$15</span>
+            <!-- ==========================
+                 BURGERS
+            =========================== -->
+
+            <div class="menu-category-header">
+
+                <p>Grilled Favorites</p>
+
+                <h2>Burgers</h2>
 
             </div>
-        </div>
 
-        <!-- Deluxe Loaded Fries -->
-        <div class="menu-card">
 
-            <div class="menu-image">
-                <img src="images/Deluxe.png" alt="Deluxe Loaded Fries">
+            <!-- Brisket Burger -->
+
+            <article
+                class="menu-card featured-menu-card"
+                id="brisket-burger"
+            >
+
+                <div class="menu-image">
+
+                    <img
+                        src="images/brisketburger.png"
+                        alt="Brisket Burger"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="menu-info">
+
+                    <h2>
+                        Brisket Burger
+
+                        <span class="menu-badge">
+                            House Favorite
+                        </span>
+                    </h2>
+
+                    <p>
+                        A 1/3-pound burger topped with 5 ounces of
+                        homemade brisket, BBQ sauce, lettuce, tomato,
+                        onions, and pickles. Served with a side of fries.
+                    </p>
+
+                    <span class="price">
+                        $17
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Hawaiian Burger -->
+
+            <article class="menu-card">
+
+                <div class="menu-image">
+
+                    <img
+                        src="images/hawaiianBurger.png"
+                        alt="Hawaiian Burger"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="menu-info">
+
+                    <h2>Hawaiian Burger</h2>
+
+                    <p>
+                        A 1/3-pound burger topped with ham, pineapple,
+                        pepper jack cheese, lettuce, tomato, onion, and
+                        pickles. Served with a side of fries.
+                    </p>
+
+                    <span class="price">
+                        $16
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+                 BIRRIA & TACOS
+            =========================== -->
+
+            <div class="menu-category-header">
+
+                <p>Traditional Flavor, Mise En Place Style</p>
+
+                <h2>Birria &amp; Tacos</h2>
+
             </div>
 
-            <div class="menu-info">
 
-                <h2>Deluxe Loaded Fries</h2>
+            <!-- Quesabirria -->
 
-                <p>
-                    Crispy golden fries loaded with juicy steak, 
-                    crispy bacon, sliced hot dog, warm nacho cheese, 
-                    fresh pico de gallo, and a dollop of cool sour cream.
-                </p>
+            <article
+                class="menu-card featured-menu-card"
+                id="quesabirria"
+            >
 
-                <span class="price">$15</span>
+                <div class="menu-image">
+
+                    <img
+                        src="images/quesabirria.png"
+                        alt="Quesabirria Tacos"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="menu-info">
+
+                    <h2>
+                        Quesabirria
+
+                        <span class="menu-badge">
+                            Must Try
+                        </span>
+                    </h2>
+
+                    <p>
+                        Corn tortillas filled with mozzarella cheese,
+                        homemade birria, onion, and cilantro. Served with
+                        a side of rich birria broth for dipping.
+                    </p>
+
+                    <span class="price">
+                        $16
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Birriamen -->
+
+            <article class="menu-card">
+
+                <div class="menu-image">
+
+                    <img
+                        src="images/birriaRamen.png"
+                        alt="Birriamen"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="menu-info">
+
+                    <h2>Birriamen</h2>
+
+                    <p>
+                        Ramen noodles served in our rich homemade birria
+                        broth with tender birria meat, fresh onion, and
+                        cilantro.
+                    </p>
+
+                    <span class="price">
+                        $16
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Street Steak Tacos -->
+
+            <article class="menu-card">
+
+                <div class="menu-image">
+
+                    <img
+                        src="images/tacos.png"
+                        alt="Street Steak Tacos"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="menu-info">
+
+                    <h2>Street Steak Tacos</h2>
+
+                    <p>
+                        Four authentic street tacos made with seasoned
+                        chopped steak on warm corn tortillas, finished
+                        with fresh onions and cilantro. Served with lime
+                        wedges and homemade salsa.
+                    </p>
+
+                    <span class="price">
+                        $15
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+                 WRAPS
+            =========================== -->
+
+            <div class="menu-category-header">
+
+                <p>Crispy, Fresh &amp; Wrapped</p>
+
+                <h2>Wraps</h2>
 
             </div>
-        </div>
 
-        <!-- Nachos -->
-        <div class="menu-card">
 
-            <div class="menu-image">
-                <img src="images/nachos.png" alt="Nachos">
+            <!-- Jalapeño Chicken Ranch Wrap -->
+
+            <article class="menu-card">
+
+                <div class="menu-image">
+
+                    <img
+                        src="images/ranchwrap.png"
+                        alt="Jalapeño Chicken Ranch Wrap"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="menu-info">
+
+                    <h2>Jalapeño Chicken Ranch Wrap</h2>
+
+                    <p>
+                        Crispy chicken wrapped in a warm flour tortilla
+                        with crispy bacon, mozzarella cheese, pickled
+                        jalapeños, crisp lettuce, fresh pico de gallo,
+                        and creamy ranch dressing.
+                    </p>
+
+                    <span class="price">
+                        $15
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Chicken Caesar Wrap -->
+
+            <article class="menu-card">
+
+                <div class="menu-image">
+
+                    <img
+                        src="images/caesarwrap.png"
+                        alt="Chicken Caesar Wrap"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="menu-info">
+
+                    <h2>Chicken Caesar Wrap</h2>
+
+                    <p>
+                        Crispy chicken wrapped in a warm flour tortilla
+                        with crisp lettuce, fresh tomatoes, melted
+                        cheese, and creamy Caesar dressing.
+                    </p>
+
+                    <span class="price">
+                        $15
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+                 LOADED FAVORITES & SIDES
+            =========================== -->
+
+            <div class="menu-category-header">
+
+                <p>Loaded Up &amp; Made to Share</p>
+
+                <h2>Loaded Favorites &amp; Sides</h2>
+
             </div>
 
-            <div class="menu-info">
 
-                <h2>Nachos</h2>
+            <!-- Deluxe Loaded Fries -->
 
-                <p>
-                    Crispy corn tortilla chips loaded with creamy jalapeño nacho cheese, 
-                    fresh pico de gallo, sour cream, green onions, 
-                    and your choice of tender chicken, seasoned steak, or savory chorizo.
-                </p>
+            <article class="menu-card">
 
-                <span class="price">$14</span>
+                <div class="menu-image">
 
-            </div>
-        </div>
+                    <img
+                        src="images/Deluxe.png"
+                        alt="Deluxe Loaded Fries"
+                        loading="lazy"
+                    >
 
-        <!-- Street Corn -->
-        <div class="menu-card">
+                </div>
 
-            <div class="menu-image">
-                <img src="images/streetcorn.png" alt="Street Corn">
-            </div>
+                <div class="menu-info">
 
-            <div class="menu-info">
+                    <h2>Aztec fries</h2>
 
-                <h2>Street Corn</h2>
+                    <p>
+                        Crispy golden fries loaded with juicy steak,
+                        crispy bacon, sliced hot dog, warm nacho cheese,
+                        fresh pico de gallo, and a dollop of cool sour
+                        cream.
+                    </p>
 
-                <p>
-                    Sweet corn tossed in jalapeño-infused butter, 
-                    then mixed with creamy mayonnaise, fresh cilantro, 
-                    Mexican crumbled cheese, and finished with a sprinkle of Tajín.
-                </p>
+                    <span class="price">
+                        $18
+                    </span>
 
-                <span class="price">$8</span>
+                </div>
 
-            </div>
-        </div>
+            </article>
 
-    </section>
 
+            <!-- Nachos -->
+
+            <article class="menu-card">
+
+                <div class="menu-image">
+
+                    <img
+                        src="images/nachos.png"
+                        alt="Loaded Nachos"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="menu-info">
+
+                    <h2>Nachos</h2>
+
+                    <p>
+                        Crispy corn tortilla chips loaded with creamy
+                        jalapeño nacho cheese, fresh pico de gallo, sour
+                        cream, green onions, and your choice of tender
+                        chicken, seasoned steak, or savory chorizo.
+                    </p>
+
+                    <span class="price">
+                        $16
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Street Corn -->
+
+            <article class="menu-card">
+
+                <div class="menu-image">
+
+                    <img
+                        src="images/streetcorn.png"
+                        alt="Mexican Street Corn"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="menu-info">
+
+                    <h2>Street Corn</h2>
+
+                    <p>
+                        Sweet corn tossed in jalapeño-infused butter,
+                        then mixed with creamy mayonnaise, fresh
+                        cilantro, Mexican crumbled cheese, and finished
+                        with a sprinkle of Tajín.
+                    </p>
+
+                    <span class="price">
+                        $9
+                    </span>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
 
     <footer class="menu-footer">
-    <p>Thank you for supporting local ❤️</p>
-</footer>
 
-<nav class="sticky-menu-actions" aria-label="Menu actions">
+        <p>
+            Thank you for supporting local ❤️
+        </p>
 
-    <a href="index.html" class="sticky-action-button">
-        <i class="fa-solid fa-house"></i>
-        Home
-    </a>
+    </footer>
 
-    <a href="tel:9208709137" class="sticky-action-button call-button">
-        <i class="fa-solid fa-phone"></i>
-        Call Us
-    </a>
 
-</nav>
+    <!-- ==========================
+         STICKY ACTION BUTTONS
+    =========================== -->
+
+    <nav
+        class="sticky-menu-actions"
+        aria-label="Menu actions"
+    >
+
+        <a
+            href="index.html"
+            class="sticky-action-button"
+        >
+            <i
+                class="fa-solid fa-house"
+                aria-hidden="true"
+            ></i>
+
+            <span>Home</span>
+        </a>
+
+
+        <a
+            href="tel:9208709137"
+            class="sticky-action-button call-button"
+        >
+            <i
+                class="fa-solid fa-phone"
+                aria-hidden="true"
+            ></i>
+
+            <span>Call Us</span>
+        </a>
+
+    </nav>
 
 </body>
 </html>
