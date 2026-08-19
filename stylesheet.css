@@ -70,6 +70,17 @@ h2{
     background-color:#A71B20;
 }
 
+.order-button {
+    background-color: #efe4c6;
+    color: #101010;
+    border: 2px solid #efe4c6;
+}
+
+.order-button:hover {
+    background-color: #ffffff;
+    color: #101010;
+}
+
 /* ==========================
    MENU PAGE
 ========================== */
@@ -201,6 +212,15 @@ h2{
 
 .call-button {
     background-color: #8f161b;
+}
+.order-action-button {
+    background-color: #efe4c6;
+    color: #101010;
+}
+
+.order-action-button:hover {
+    background-color: #ffffff;
+    color: #101010;
 }
 
 /* Prevent the sticky buttons from covering the bottom content */
