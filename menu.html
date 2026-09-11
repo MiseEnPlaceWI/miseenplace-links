@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJ6DH92DYS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-VJ6DH92DYS');
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-VJ6DH92DYS');
     </script>
+
+
     <meta charset="UTF-8">
 
     <meta
@@ -19,17 +28,25 @@
 
     <title>Mise En Place Menu</title>
 
+
     <!-- Font Awesome -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
+
     <!-- Existing stylesheet -->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link
+        rel="stylesheet"
+        href="stylesheet.css"
+    >
+
 </head>
 
+
 <body class="menu-page">
+
 
     <!-- ==========================
          MENU HEADER
@@ -52,13 +69,18 @@
     </header>
 
 
+
     <main>
+
 
         <!-- ==========================
              FEATURED FAVORITES
         =========================== -->
 
-        <section class="featured-section">
+        <section
+            class="featured-section"
+            data-menu-section="featured_favorites"
+        >
 
             <p class="section-eyebrow">
                 Not Sure What to Order?
@@ -68,50 +90,108 @@
                 Featured Favorites
             </h2>
 
+
             <div class="featured-links">
+
+
+                <!-- Torta Cubana -->
 
                 <a
                     href="#torta-cubana"
                     class="featured-link"
+                    onclick="
+                        gtag('event', 'featured_item_click', {
+                            item_name: 'torta_cubana',
+                            source_page: 'menu'
+                        });
+                    "
                 >
+
                     <span class="featured-item-details">
-                        <strong>Torta Cubana</strong>
-                        <small>Juan's Favorite</small>
+
+                        <strong>
+                            Torta Cubana
+                        </strong>
+
+                        <small>
+                            Juan's Favorite
+                        </small>
+
                     </span>
+
 
                     <span class="featured-price">
                         $24
                     </span>
+
                 </a>
 
+
+
+                <!-- Brisket Burger -->
 
                 <a
                     href="#brisket-burger"
                     class="featured-link"
+                    onclick="
+                        gtag('event', 'featured_item_click', {
+                            item_name: 'brisket_burger',
+                            source_page: 'menu'
+                        });
+                    "
                 >
+
                     <span class="featured-item-details">
-                        <strong>Brisket Burger</strong>
-                        <small>House Favorite</small>
+
+                        <strong>
+                            Brisket Burger
+                        </strong>
+
+                        <small>
+                            House Favorite
+                        </small>
+
                     </span>
+
 
                     <span class="featured-price">
                         $17
                     </span>
+
                 </a>
 
+
+
+                <!-- Quesabirria -->
 
                 <a
                     href="#quesabirria"
                     class="featured-link"
+                    onclick="
+                        gtag('event', 'featured_item_click', {
+                            item_name: 'quesabirria',
+                            source_page: 'menu'
+                        });
+                    "
                 >
+
                     <span class="featured-item-details">
-                        <strong>Quesabirria</strong>
-                        <small>Must Try</small>
+
+                        <strong>
+                            Quesabirria
+                        </strong>
+
+                        <small>
+                            Must Try
+                        </small>
+
                     </span>
+
 
                     <span class="featured-price">
                         $16
                     </span>
+
                 </a>
 
             </div>
@@ -119,19 +199,34 @@
         </section>
 
 
+
+
+        <!-- ==========================
+             MENU
+        =========================== -->
+
         <section class="menu-container">
+
 
             <!-- ==========================
                  TORTAS
             =========================== -->
 
-            <div class="menu-category-header">
+            <div
+                class="menu-category-header"
+                data-menu-section="tortas"
+            >
 
-                <p>Big, Bold &amp; Fully Loaded</p>
+                <p>
+                    Big, Bold &amp; Fully Loaded
+                </p>
 
-                <h2>Tortas</h2>
+                <h2>
+                    Tortas
+                </h2>
 
             </div>
+
 
 
             <!-- Torta Cubana -->
@@ -151,15 +246,19 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
                     <h2>
+
                         Torta Cubana
 
                         <span class="menu-badge">
                             Juan's Favorite
                         </span>
+
                     </h2>
+
 
                     <p>
                         Our ultimate Mexican torta stacked with breaded
@@ -170,6 +269,7 @@
                         or chipotle peppers in adobo sauce.
                     </p>
 
+
                     <span class="price">
                         $24
                     </span>
@@ -177,6 +277,7 @@
                 </div>
 
             </article>
+
 
 
             <!-- Hawaiian Torta -->
@@ -193,9 +294,13 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Hawaiian Torta</h2>
+                    <h2>
+                        Hawaiian Torta
+                    </h2>
+
 
                     <p>
                         A toasted Mexican torta stacked with breaded
@@ -205,6 +310,7 @@
                         peppers in adobo sauce.
                     </p>
 
+
                     <span class="price">
                         $22
                     </span>
@@ -212,6 +318,7 @@
                 </div>
 
             </article>
+
 
 
             <!-- Chicken Milanesa Torta -->
@@ -228,9 +335,13 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Chicken Milanesa Torta</h2>
+                    <h2>
+                        Chicken Milanesa Torta
+                    </h2>
+
 
                     <p>
                         Crispy breaded chicken breast topped with melted
@@ -238,6 +349,7 @@
                         pickled jalapeños on a toasted Mexican bolillo
                         roll.
                     </p>
+
 
                     <span class="price">
                         $22
@@ -248,17 +360,28 @@
             </article>
 
 
+
+
+
             <!-- ==========================
                  BURGERS
             =========================== -->
 
-            <div class="menu-category-header">
+            <div
+                class="menu-category-header"
+                data-menu-section="burgers"
+            >
 
-                <p>Grilled Favorites</p>
+                <p>
+                    Grilled Favorites
+                </p>
 
-                <h2>Burgers</h2>
+                <h2>
+                    Burgers
+                </h2>
 
             </div>
+
 
 
             <!-- Brisket Burger -->
@@ -278,21 +401,26 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
                     <h2>
+
                         Brisket Burger
 
                         <span class="menu-badge">
                             House Favorite
                         </span>
+
                     </h2>
+
 
                     <p>
                         A 1/3-pound burger topped with 5 ounces of
                         homemade brisket, BBQ sauce, lettuce, tomato,
                         onions, and pickles. Served with a side of fries.
                     </p>
+
 
                     <span class="price">
                         $17
@@ -301,6 +429,7 @@
                 </div>
 
             </article>
+
 
 
             <!-- Hawaiian Burger -->
@@ -317,15 +446,20 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Hawaiian Burger</h2>
+                    <h2>
+                        Hawaiian Burger
+                    </h2>
+
 
                     <p>
                         A 1/3-pound burger topped with ham, pineapple,
                         pepper jack cheese, lettuce, tomato, onion, and
                         pickles. Served with a side of fries.
                     </p>
+
 
                     <span class="price">
                         $16
@@ -336,17 +470,28 @@
             </article>
 
 
+
+
+
             <!-- ==========================
                  BIRRIA & TACOS
             =========================== -->
 
-            <div class="menu-category-header">
+            <div
+                class="menu-category-header"
+                data-menu-section="birria_tacos"
+            >
 
-                <p>Traditional Flavor, Mise En Place Style</p>
+                <p>
+                    Traditional Flavor, Mise En Place Style
+                </p>
 
-                <h2>Birria &amp; Tacos</h2>
+                <h2>
+                    Birria &amp; Tacos
+                </h2>
 
             </div>
+
 
 
             <!-- Quesabirria -->
@@ -366,21 +511,26 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
                     <h2>
+
                         Quesabirria
 
                         <span class="menu-badge">
                             Must Try
                         </span>
+
                     </h2>
+
 
                     <p>
                         Corn tortillas filled with mozzarella cheese,
                         homemade birria, onion, and cilantro. Served with
                         a side of rich birria broth for dipping.
                     </p>
+
 
                     <span class="price">
                         $16
@@ -389,6 +539,7 @@
                 </div>
 
             </article>
+
 
 
             <!-- Birriamen -->
@@ -405,15 +556,20 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Birriamen</h2>
+                    <h2>
+                        Birriamen
+                    </h2>
+
 
                     <p>
                         Ramen noodles served in our rich homemade birria
                         broth with tender birria meat, fresh onion, and
                         cilantro.
                     </p>
+
 
                     <span class="price">
                         $16
@@ -422,6 +578,7 @@
                 </div>
 
             </article>
+
 
 
             <!-- Street Steak Tacos -->
@@ -438,9 +595,13 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Street Steak Tacos</h2>
+                    <h2>
+                        Street Steak Tacos
+                    </h2>
+
 
                     <p>
                         Four authentic street tacos made with seasoned
@@ -448,6 +609,7 @@
                         with fresh onions and cilantro. Served with lime
                         wedges and homemade salsa.
                     </p>
+
 
                     <span class="price">
                         $15
@@ -458,17 +620,28 @@
             </article>
 
 
+
+
+
             <!-- ==========================
                  WRAPS
             =========================== -->
 
-            <div class="menu-category-header">
+            <div
+                class="menu-category-header"
+                data-menu-section="wraps"
+            >
 
-                <p>Crispy, Fresh &amp; Wrapped</p>
+                <p>
+                    Crispy, Fresh &amp; Wrapped
+                </p>
 
-                <h2>Wraps</h2>
+                <h2>
+                    Wraps
+                </h2>
 
             </div>
+
 
 
             <!-- Jalapeño Chicken Ranch Wrap -->
@@ -485,9 +658,13 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Jalapeño Chicken Ranch Wrap</h2>
+                    <h2>
+                        Jalapeño Chicken Ranch Wrap
+                    </h2>
+
 
                     <p>
                         Crispy chicken wrapped in a warm flour tortilla
@@ -496,6 +673,7 @@
                         and creamy ranch dressing.
                     </p>
 
+
                     <span class="price">
                         $15
                     </span>
@@ -503,6 +681,7 @@
                 </div>
 
             </article>
+
 
 
             <!-- Chicken Caesar Wrap -->
@@ -519,15 +698,20 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Chicken Caesar Wrap</h2>
+                    <h2>
+                        Chicken Caesar Wrap
+                    </h2>
+
 
                     <p>
                         Crispy chicken wrapped in a warm flour tortilla
                         with crisp lettuce, fresh tomatoes, melted
                         cheese, and creamy Caesar dressing.
                     </p>
+
 
                     <span class="price">
                         $15
@@ -538,20 +722,31 @@
             </article>
 
 
+
+
+
             <!-- ==========================
                  LOADED FAVORITES & SIDES
             =========================== -->
 
-            <div class="menu-category-header">
+            <div
+                class="menu-category-header"
+                data-menu-section="loaded_favorites"
+            >
 
-                <p>Loaded Up &amp; Made to Share</p>
+                <p>
+                    Loaded Up &amp; Made to Share
+                </p>
 
-                <h2>Loaded Favorites &amp; Sides</h2>
+                <h2>
+                    Loaded Favorites &amp; Sides
+                </h2>
 
             </div>
 
 
-            <!-- Deluxe Loaded Fries -->
+
+            <!-- Aztec Fries -->
 
             <article class="menu-card">
 
@@ -559,15 +754,19 @@
 
                     <img
                         src="images/Deluxe.png"
-                        alt="Deluxe Loaded Fries"
+                        alt="Aztec Fries"
                         loading="lazy"
                     >
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Aztec fries</h2>
+                    <h2>
+                        Aztec Fries
+                    </h2>
+
 
                     <p>
                         Crispy golden fries loaded with juicy steak,
@@ -576,6 +775,7 @@
                         cream.
                     </p>
 
+
                     <span class="price">
                         $18
                     </span>
@@ -583,6 +783,7 @@
                 </div>
 
             </article>
+
 
 
             <!-- Nachos -->
@@ -599,9 +800,13 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Nachos</h2>
+                    <h2>
+                        Nachos
+                    </h2>
+
 
                     <p>
                         Crispy corn tortilla chips loaded with creamy
@@ -610,6 +815,7 @@
                         chicken, seasoned steak, or savory chorizo.
                     </p>
 
+
                     <span class="price">
                         $16
                     </span>
@@ -617,6 +823,7 @@
                 </div>
 
             </article>
+
 
 
             <!-- Street Corn -->
@@ -633,9 +840,13 @@
 
                 </div>
 
+
                 <div class="menu-info">
 
-                    <h2>Street Corn</h2>
+                    <h2>
+                        Street Corn
+                    </h2>
+
 
                     <p>
                         Sweet corn tossed in jalapeño-infused butter,
@@ -643,6 +854,7 @@
                         cilantro, Mexican crumbled cheese, and finished
                         with a sprinkle of Tajín.
                     </p>
+
 
                     <span class="price">
                         $9
@@ -652,9 +864,35 @@
 
             </article>
 
+
         </section>
 
+
+
+        <!-- ==========================
+             MENU DISCLAIMERS
+        =========================== -->
+
+        <section class="menu-disclaimers">
+
+            <p class="tax-disclaimer">
+                Prices shown do not include applicable sales tax.
+            </p>
+
+
+            <p class="consumer-advisory">
+                <strong>* Consumer Advisory:</strong>
+                Consuming raw or undercooked meats, poultry, seafood,
+                shellfish, or eggs may increase your risk of foodborne
+                illness, especially if you have certain medical conditions.
+            </p>
+
+        </section>
+
+
     </main>
+
+
 
 
     <!-- ==========================
@@ -670,54 +908,268 @@
     </footer>
 
 
+
+
     <!-- ==========================
          STICKY ACTION BUTTONS
     =========================== -->
 
     <nav
-    class="sticky-menu-actions"
-    aria-label="Menu actions"
->
-
-    <a
-        href="index.html"
-        class="sticky-action-button"
+        class="sticky-menu-actions"
+        aria-label="Menu actions"
     >
-        <i
-            class="fa-solid fa-house"
-            aria-hidden="true"
-        ></i>
-
-        <span>Home</span>
-    </a>
 
 
-    <a
-        href="https://online.skytab.com/s/kitchenonwheelsmiseenplace"
-        class="sticky-action-button order-action-button"
-    >
-        <i
-            class="fa-solid fa-bag-shopping"
-            aria-hidden="true"
-        ></i>
+        <!-- Home -->
 
-        <span>Order Online</span>
-    </a>
+        <a
+            href="index.html"
+            class="sticky-action-button"
+            onclick="
+                gtag('event', 'home_click', {
+                    source_page: 'menu'
+                });
+            "
+        >
+
+            <i
+                class="fa-solid fa-house"
+                aria-hidden="true"
+            ></i>
+
+            <span>
+                Home
+            </span>
+
+        </a>
 
 
-    <a
-        href="tel:9208709137"
-        class="sticky-action-button call-button"
-    >
-        <i
-            class="fa-solid fa-phone"
-            aria-hidden="true"
-        ></i>
 
-        <span>Call Us</span>
-    </a>
+        <!-- Order Online -->
 
-</nav>
+        <a
+            href="https://online.skytab.com/s/kitchenonwheelsmiseenplace"
+            class="sticky-action-button order-action-button"
+            onclick="
+                gtag('event', 'order_online_click', {
+                    source_page: 'menu'
+                });
+            "
+        >
+
+            <i
+                class="fa-solid fa-bag-shopping"
+                aria-hidden="true"
+            ></i>
+
+            <span>
+                Order Online
+            </span>
+
+        </a>
+
+
+
+        <!-- Call -->
+
+        <a
+            href="tel:9208709137"
+            class="sticky-action-button call-button"
+            onclick="
+                gtag('event', 'phone_click', {
+                    source_page: 'menu'
+                });
+            "
+        >
+
+            <i
+                class="fa-solid fa-phone"
+                aria-hidden="true"
+            ></i>
+
+            <span>
+                Call Us
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+
+
+    <!-- ==========================
+         GOOGLE ANALYTICS
+         MENU SECTION TRACKING
+    =========================== -->
+
+    <script>
+
+        /*
+        =========================================
+        MENU SECTION VISIBILITY TRACKING
+        =========================================
+
+        A section must remain at least partially
+        visible for 2 seconds before GA4 records
+        it as a menu_section_view.
+
+        Each section is only counted once during
+        that page load.
+        */
+
+
+        const menuSections =
+            document.querySelectorAll('[data-menu-section]');
+
+
+        const sectionTimers = new Map();
+
+        const viewedSections = new Set();
+
+
+
+        const menuObserver =
+            new IntersectionObserver((entries) => {
+
+
+                entries.forEach(entry => {
+
+
+                    const sectionName =
+                        entry.target.dataset.menuSection;
+
+
+
+                    /*
+                    Section enters the viewport
+                    */
+
+                    if (
+                        entry.isIntersecting &&
+                        !viewedSections.has(sectionName)
+                    ) {
+
+
+                        /*
+                        Don't create multiple timers
+                        for the same section.
+                        */
+
+                        if (!sectionTimers.has(sectionName)) {
+
+
+                            const timer =
+                                setTimeout(() => {
+
+
+                                    /*
+                                    Verify that the section is still
+                                    visible after the 2 second delay.
+                                    */
+
+                                    const rect =
+                                        entry.target.getBoundingClientRect();
+
+
+                                    const stillVisible =
+                                        rect.bottom > 0 &&
+                                        rect.top < window.innerHeight;
+
+
+
+                                    if (stillVisible) {
+
+
+                                        gtag(
+                                            'event',
+                                            'menu_section_view',
+                                            {
+                                                section_name: sectionName,
+                                                source_page: 'menu'
+                                            }
+                                        );
+
+
+                                        viewedSections.add(sectionName);
+
+
+                                        menuObserver.unobserve(
+                                            entry.target
+                                        );
+
+                                    }
+
+
+                                    sectionTimers.delete(
+                                        sectionName
+                                    );
+
+
+                                }, 2000);
+
+
+                            sectionTimers.set(
+                                sectionName,
+                                timer
+                            );
+
+                        }
+
+                    }
+
+
+
+                    /*
+                    User scrolls away before
+                    the 2-second timer finishes.
+                    */
+
+                    else if (!entry.isIntersecting) {
+
+
+                        if (sectionTimers.has(sectionName)) {
+
+
+                            clearTimeout(
+                                sectionTimers.get(sectionName)
+                            );
+
+
+                            sectionTimers.delete(
+                                sectionName
+                            );
+
+                        }
+
+                    }
+
+
+                });
+
+
+            },
+            {
+                threshold: 0.35
+            });
+
+
+
+        /*
+        Start observing every section
+        */
+
+        menuSections.forEach(section => {
+
+            menuObserver.observe(section);
+
+        });
+
+
+    </script>
+
 
 </body>
+
 </html>
