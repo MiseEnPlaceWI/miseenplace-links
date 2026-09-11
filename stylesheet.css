@@ -63,6 +63,49 @@ h2 {
     background-color: #8f161b;
     margin-bottom: 30px;
 }
+/* ==========================
+   HOURS OF OPERATION
+========================== */
+
+.hours-section {
+    margin-bottom: 30px;
+    padding: 0 6px;
+}
+
+.hours-section h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    color: #efe4c6;
+}
+
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #c8bca3;
+    border-bottom: 1px solid rgba(239, 228, 198, 0.08);
+    padding-bottom: 7px;
+}
+
+.hours-row span:first-child {
+    font-weight: bold;
+    color: #efe4c6;
+}
+
+.hours-row span:last-child {
+    text-align: right;
+}
 
 .button {
     display: block;
@@ -463,6 +506,7 @@ h2 {
 }
 
 
+
 /* ==========================
    RESPONSIVE MENU
 ========================== */
@@ -552,4 +596,12 @@ h2 {
     .consumer-advisory {
         font-size: 0.72rem;
     }
+   .hours-section h3 {
+    font-size: 24px;
+   }
+
+   .hours-row {
+    font-size: 0.88rem;
+    gap: 12px;
+   }
 }
