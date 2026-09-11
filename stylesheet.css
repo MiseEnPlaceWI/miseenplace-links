@@ -378,6 +378,24 @@ h2{
     white-space: nowrap;
 }
 
+.menu-disclaimers {
+    max-width: 900px;
+    margin: 40px auto 110px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.menu-disclaimers p {
+    margin: 8px 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.consumer-advisory {
+    font-size: 0.75rem;
+}
+
 
 /* ==========================
    RESPONSIVE MENU
