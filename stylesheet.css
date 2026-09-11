@@ -1,74 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@400;600;700&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ==========================
+   GLOBAL RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color:#101010;
-    color:#efe4c6;
-    font-family:Arial, sans-serif;
+
+/* ==========================
+   GLOBAL BODY
+========================== */
+
+body {
+    background-color: #101010;
+    color: #efe4c6;
+    font-family: Arial, sans-serif;
 }
 
-.container{
-    max-width:500px;
-    margin:auto;
-    padding:40px 25px;
-    text-align:center;
+
+/* ==========================
+   LINK HUB / HOME PAGE
+========================== */
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px 25px;
+    text-align: center;
 }
 
-.logo{
-    width:180px;
-    margin-bottom:15px;
+.logo {
+    width: 180px;
+    margin-bottom: 15px;
 }
 
-h1{
-    font-family:'Cormorant Garamond', serif;
-    font-size:60px;
-    margin-bottom:5px;
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    margin-bottom: 5px;
 }
 
-h2{
-    font-family:'Bebas Neue', sans-serif;
-    font-size:32px;
-    letter-spacing:3px;
-    margin-bottom:10px;
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
-.subtitle{
-    font-family:'Bebas Neue', sans-serif;
-    letter-spacing:2px;
-    color:#F2EAD8;
-    margin-bottom:25px;
+.subtitle {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    color: #f2ead8;
+    margin-bottom: 25px;
 }
 
-.divider{
-    height:1px;
-    background-color:#8F161B;
-    margin-bottom:30px;
+.divider {
+    height: 1px;
+    background-color: #8f161b;
+    margin-bottom: 30px;
 }
 
-.button{
-    
-    display:block;
-    text-decoration:none;
-    background-color:#8F161B;
-    color:#efe4c6;
-    padding:18px;
-    margin-bottom:15px;
+.button {
+    display: block;
+    text-decoration: none;
+    background-color: #8f161b;
+    color: #efe4c6;
+    padding: 18px;
+    margin-bottom: 15px;
     margin-right: 12px;
-    border-radius:10px;
-    font-family:'Bebas Neue', sans-serif;
-    letter-spacing:2px;
-    font-size:24px;
-    transition:.3s;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-size: 24px;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
 }
 
-.button:hover{
-    background-color:#A71B20;
+.button:hover {
+    background-color: #a71b20;
 }
+
+.button:active {
+    transform: scale(0.98);
+}
+
+
+/* Order Online button */
 
 .order-button {
     background-color: #efe4c6;
@@ -81,6 +103,7 @@ h2{
     color: #101010;
 }
 
+
 /* ==========================
    MENU PAGE
 ========================== */
@@ -89,7 +112,15 @@ h2{
     background: #101010;
     color: #efe8d7;
     font-family: Arial, sans-serif;
+
+    /* Prevent fixed navigation from covering content */
+    padding-bottom: 95px;
 }
+
+
+/* ==========================
+   MENU HEADER
+========================== */
 
 .menu-header {
     text-align: center;
@@ -110,6 +141,11 @@ h2{
     color: #c8bca3;
 }
 
+
+/* ==========================
+   BACK BUTTON
+========================== */
+
 .back-button {
     color: #efe8d7;
     text-decoration: none;
@@ -117,12 +153,22 @@ h2{
     margin-bottom: 25px;
 }
 
+
+/* ==========================
+   MENU CONTAINER
+========================== */
+
 .menu-container {
     width: 100%;
     max-width: 900px;
     margin: auto;
     padding: 0 20px;
 }
+
+
+/* ==========================
+   MENU CARDS
+========================== */
 
 .menu-card {
     width: 100%;
@@ -142,12 +188,16 @@ h2{
 }
 
 .menu-info h2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 15px;
 }
 
 .menu-info p {
     line-height: 1.6;
-    color: #ddd;
+    color: #dddddd;
 }
 
 .price {
@@ -158,81 +208,6 @@ h2{
     color: #efe8d7;
 }
 
-.menu-footer {
-    text-align: center;
-    padding: 40px;
-    color: #c8bca3;
-}
-
-
-/* ==========================
-   STICKY MENU BUTTONS
-========================== */
-
-.sticky-menu-actions {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    padding: 12px 16px;
-    padding-bottom: calc(12px + env(safe-area-inset-bottom));
-    background: rgba(16, 16, 16, 0.96);
-    border-top: 1px solid #8f161b;
-    z-index: 1000;
-}
-
-.sticky-action-button {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    min-height: 54px;
-    padding: 12px;
-    border-radius: 10px;
-    background-color: #8f161b;
-    color: #efe4c6;
-    text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 21px;
-    letter-spacing: 1.5px;
-    transition: background-color 0.3s ease,
-                transform 0.2s ease;
-}
-
-.sticky-action-button:hover {
-    background-color: #a71b20;
-}
-
-.sticky-action-button:active {
-    transform: scale(0.97);
-}
-
-.call-button {
-    background-color: #8f161b;
-}
-.order-action-button {
-    background-color: #efe4c6;
-    color: #101010;
-}
-
-.order-action-button:hover {
-    background-color: #ffffff;
-    color: #101010;
-}
-
-/* Prevent the sticky buttons from covering the bottom content */
-.menu-page {
-    padding-bottom: 95px;
-}
-
-.menu-footer {
-    text-align: center;
-    padding: 40px 20px;
-    color: #c8bca3;
-}
 
 /* ==========================
    FEATURED FAVORITES
@@ -281,15 +256,20 @@ h2{
     border-radius: 12px;
     color: #efe8d7;
     text-decoration: none;
-    transition: transform 0.2s ease,
-                background-color 0.2s ease,
-                border-color 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .featured-link:hover {
     background: #202020;
     border-color: #a71b20;
     transform: translateY(-2px);
+}
+
+.featured-link:active {
+    transform: scale(0.98);
 }
 
 .featured-item-details {
@@ -357,13 +337,6 @@ h2{
     border: 1px solid rgba(143, 22, 27, 0.75);
 }
 
-.menu-info h2 {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
 .menu-badge {
     display: inline-block;
     padding: 5px 9px;
@@ -378,22 +351,115 @@ h2{
     white-space: nowrap;
 }
 
+
+/* ==========================
+   MENU DISCLAIMERS
+========================== */
+
 .menu-disclaimers {
+    width: 100%;
     max-width: 900px;
-    margin: 40px auto 110px;
-    padding: 0 20px;
+    margin: 45px auto 10px;
+    padding: 0 25px;
     text-align: center;
 }
 
 .menu-disclaimers p {
-    margin: 8px 0;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    opacity: 0.8;
+    color: #c8bca3;
+    line-height: 1.55;
+}
+
+.tax-disclaimer {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
 }
 
 .consumer-advisory {
+    max-width: 760px;
+    margin: 0 auto;
     font-size: 0.75rem;
+}
+
+.consumer-advisory strong {
+    color: #efe8d7;
+}
+
+
+/* ==========================
+   MENU FOOTER
+========================== */
+
+.menu-footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #c8bca3;
+}
+
+
+/* ==========================
+   STICKY MENU BUTTONS
+========================== */
+
+.sticky-menu-actions {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    background: rgba(16, 16, 16, 0.96);
+    border-top: 1px solid #8f161b;
+    z-index: 1000;
+}
+
+.sticky-action-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 54px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #8f161b;
+    color: #efe4c6;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.sticky-action-button:hover {
+    background-color: #a71b20;
+}
+
+.sticky-action-button:active {
+    transform: scale(0.97);
+}
+
+
+/* Call button */
+
+.call-button {
+    background-color: #8f161b;
+}
+
+
+/* Order button */
+
+.order-action-button {
+    background-color: #efe4c6;
+    color: #101010;
+}
+
+.order-action-button:hover {
+    background-color: #ffffff;
+    color: #101010;
 }
 
 
@@ -421,5 +487,69 @@ h2{
 
     .menu-category-header h2 {
         font-size: 2rem;
+    }
+
+    .menu-disclaimers {
+        margin-top: 35px;
+        padding: 0 20px;
+    }
+
+    .sticky-menu-actions {
+        gap: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sticky-action-button {
+        gap: 6px;
+        padding: 10px 8px;
+        font-size: 18px;
+    }
+}
+
+
+/* ==========================
+   SMALL PHONES
+========================== */
+
+@media (max-width: 420px) {
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .logo,
+    .menu-logo {
+        width: 150px;
+    }
+
+    .button {
+        font-size: 21px;
+        padding: 16px;
+    }
+
+    .menu-header {
+        padding: 30px 15px;
+    }
+
+    .menu-header h1 {
+        font-size: 2.6rem;
+    }
+
+    .menu-container {
+        padding: 0 14px;
+    }
+
+    .menu-info {
+        padding: 20px;
+    }
+
+    .sticky-action-button {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .consumer-advisory {
+        font-size: 0.72rem;
     }
 }
