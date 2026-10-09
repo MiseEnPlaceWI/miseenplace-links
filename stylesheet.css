@@ -340,7 +340,256 @@ h2 {
     color: #efe8d7;
 }
 
+/* ==========================
+   WEEKLY SPECIAL
+========================== */
 
+.weekly-special-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+
+/* Weekly Special Heading */
+
+.weekly-special-heading {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.weekly-special-kicker {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #a71b20;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.weekly-special-heading h2 {
+    margin-bottom: 7px;
+    color: #efe8d7;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+}
+
+.weekly-special-heading p {
+    max-width: 550px;
+    margin: auto;
+    color: #c8bca3;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* Main Special Card */
+
+.weekly-special-card {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #211516 0%,
+            #181818 55%,
+            #121212 100%
+        );
+
+    border: 2px solid #8f161b;
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.45),
+        0 0 25px rgba(143, 22, 27, 0.15);
+}
+
+
+/* Red accent at top */
+
+.weekly-special-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #8f161b;
+
+    z-index: 2;
+}
+
+
+/* Image */
+
+.weekly-special-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.weekly-special-image img {
+    width: 100%;
+    display: block;
+}
+
+
+/* THIS WEEK ONLY badge */
+
+.weekly-special-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+
+    padding: 8px 13px;
+
+    background: #8f161b;
+    color: #ffffff;
+
+    border-radius: 999px;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Special Information */
+
+.weekly-special-info {
+    padding: 28px;
+}
+
+
+/* Name + Price */
+
+.weekly-special-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-bottom: 14px;
+}
+
+.weekly-special-title-row h3 {
+    margin: 0;
+
+    color: #efe8d7;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+
+/* Price */
+
+.weekly-special-price {
+    flex-shrink: 0;
+
+    color: #efe8d7;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+/* Description */
+
+.weekly-special-description {
+    color: #dddddd;
+
+    font-size: 1rem;
+    line-height: 1.65;
+
+    margin-bottom: 18px;
+}
+
+
+/* Limited Availability */
+
+.weekly-special-availability {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #c8bca3;
+
+    font-size: 0.82rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.weekly-special-availability i {
+    color: #a71b20;
+}
+
+
+/* ==========================
+   WEEKLY SPECIAL - MOBILE
+========================== */
+
+@media (max-width: 760px) {
+
+    .weekly-special-section {
+        margin-bottom: 50px;
+    }
+
+    .weekly-special-heading h2 {
+        font-size: 2.3rem;
+    }
+
+    .weekly-special-info {
+        padding: 22px;
+    }
+
+    .weekly-special-title-row h3 {
+        font-size: 1.7rem;
+    }
+
+    .weekly-special-price {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .weekly-special-section {
+        padding: 0 14px;
+    }
+
+    .weekly-special-heading h2 {
+        font-size: 2rem;
+    }
+
+    .weekly-special-title-row {
+        gap: 12px;
+    }
+
+    .weekly-special-title-row h3 {
+        font-size: 1.55rem;
+    }
+
+    .weekly-special-badge {
+        top: 14px;
+        left: 14px;
+
+        font-size: 0.8rem;
+    }
+
+}
 /* ==========================
    CATEGORY HEADERS
 ========================== */
