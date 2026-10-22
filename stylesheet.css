@@ -533,7 +533,44 @@ h2 {
 .weekly-special-availability i {
     color: #a71b20;
 }
+/* ==========================
+   WEEKLY SPECIAL - PRICE OPTIONS
+========================== */
 
+.weekly-special-prices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+.weekly-special-price-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+
+    min-width: 150px;
+    padding: 10px 14px;
+
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+}
+
+.weekly-special-protein {
+    color: #efe8d7;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.weekly-special-price-value {
+    color: #efe8d7;
+    font-size: 1.05rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
 
 /* ==========================
    WEEKLY SPECIAL - MOBILE
@@ -560,6 +597,25 @@ h2 {
     .weekly-special-price {
         font-size: 1.4rem;
     }
+    .weekly-special-prices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.weekly-special-price-option {
+    min-width: 0;
+    padding: 10px 11px;
+    gap: 8px;
+}
+
+.weekly-special-protein {
+    font-size: 0.82rem;
+}
+
+.weekly-special-price-value {
+    font-size: 0.95rem;
+}
 
 }
 
